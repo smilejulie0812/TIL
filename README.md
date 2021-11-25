@@ -1,4 +1,4 @@
-# TIL
+# Today Julie Learned
 ## 배경
 지난 4년 간 소홀히 했던 개인 공부를 본격적으로 시작하기 위한 여러 계획 중에서도 야심차게 시작해보는 Today I Learned.
 
