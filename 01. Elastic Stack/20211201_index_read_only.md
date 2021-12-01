@@ -3,10 +3,10 @@
 Kibana 웹페이지 상에서 Search/Visualization/Dashboard 로 신규 저장 및 기존 정보를 수정하고자 할 때 Forbidden 에러로 내용이 저장되지 않는 현상
 ```
 ### 디스크 용량 부족으로 인덱스에 데이터 적재가 불가한 상황
-[2021-11-03T00:02:19,972][INFO ][o.e.c.r.a.DiskThresholdMonitor] [app01a.dev.elk.nd] low disk watermark [85%] exceeded on [cRg5XcJjS2KMYtmEpKyrdg][app01a.dev.elk.nd][/data/nd-log/data/nodes/0] free: 11.4gb[14.5%], replicas will not be assigned to this node
+[2021-11-03T00:02:19,972][INFO ][o.e.c.r.a.DiskThresholdMonitor] [<HOSTNAME>] low disk watermark [85%] exceeded on [cRg5XcJjS2KMYtmEpKyrdg][<HOSTNAME>][/<DATAPATH>/data/vnodes/0] free: 11.4gb[14.5%], replicas will not be assigned to this node
  
 ### 인덱스가 read-only 로 바뀌어 데이터 적재 불가
-[2021-11-03T14:27:14,457][WARN ][o.e.x.m.e.l.LocalExporter] [app01a.dev.elk.nd] unexpected error while indexing monitoring document
+[2021-11-03T14:27:14,457][WARN ][o.e.x.m.e.l.LocalExporter] [<HOSTNAME>] unexpected error while indexing monitoring document
 org.elasticsearch.xpack.monitoring.exporter.ExportException: ClusterBlockException[blocked by: [FORBIDDEN/12/index read-only / allow delete (api)];]
 ```
 ### 원인
