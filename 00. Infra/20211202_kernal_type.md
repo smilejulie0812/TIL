@@ -1,5 +1,7 @@
 OS 에 따른 커널 구조의 차이
 
+실장님이 인프라팀쪽 면접 진행할 때마다 꼭 묻는 게 커널에 대한 질문이어서 가볍게 정리해봄(나도 언젠간...)
+
 공부를 위해 정독 필요 : https://5equal0.tistory.com/entry/Linux-Kernel-%EC%BB%A4%EB%84%90%EC%9D%98-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%BB%A4%EB%84%90%EC%9D%98-%EA%B5%AC%EC%A1%B0
 
 참고 : https://blog.naver.com/PostView.nhn?blogId=cjsksk3113&logNo=222238471338
@@ -45,3 +47,6 @@ Windows, MacOS 등에서 사용
 
 Windows NT : Hybrid Kernel
 windows NT 는 초기에 마이크로 커널로서 개발되었지만, 주요 시스템 서비스가 커널 모드에서 동작한다는 점에서는 단일 커널의 특징을 갖고 있어 Hybrid Kernel 이라고 불린다 한다.
+
+### 과제
+OS 최적화를 위한 커널 환경설정 튜닝을 해 본 것이 있다면?
