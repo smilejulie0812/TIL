@@ -26,17 +26,17 @@ for (var i = 1; i < 10; i++) {
 ```
 #### for in 문
 ```javascript
-var arr = [1, 2, 3, 4, 5];
+var obj = { name : "사과", price : 1500 };
 
-for (var i in arr) {
-  document.write(i + " ");
+for (var i of obj) {
+  document.write(i + "<br>");
 }
 ```
 #### for of 문
 ```javascript
-var obj = { name : "사과", price : 1500 };
+var arr = [1, 2, 3, 4, 5];
 
-for (var i in obj) {
-  document.write(i + "<br>");
+for (var i of arr) {
+  document.write(i + " ");
 }
 ```
