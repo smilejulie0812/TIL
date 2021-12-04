@@ -28,7 +28,7 @@ for (var i = 1; i < 10; i++) {
 ```javascript
 var obj = { name : "사과", price : 1500 };
 
-for (var i of obj) {
+for (var i in obj) {
   document.write(i + "<br>");
 }
 ```
