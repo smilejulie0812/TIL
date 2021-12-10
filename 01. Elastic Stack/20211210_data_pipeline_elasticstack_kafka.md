@@ -120,3 +120,18 @@ output {
     }
 }
 ```
+
+### 과제
+* 파이프라인 필터 부분에서 grok 을 거친 message 필터가 자동으로 사라지고 새로 생성되지도 않는 현상이 발생.
+* filebeat 에서 loglevel 설정하는 방법
+* filebeat 의 multiline 설정이 제대로 먹는지 확인 필요
+* 아래 내용 참고로 ES grok filter 수정
+```
+grok {
+      match => ["message", "\[%{TIMESTAMP_ISO8601:timestamp}\]\[%{DATA:loglevel}%{SPACE}\]\[%{DATA:source}%{SPACE}\]%{SPACE}\[%{DATA:node}\]%{SPACE}\[%{DATA:index}\] %{NOTSPACE} \[%{DATA:updated-type}\]",
+                "message", "\[%{TIMESTAMP_ISO8601:timestamp}\]\[%{DATA:loglevel}%{SPACE}\]\[%{DATA:source}%{SPACE}\]%{SPACE}\[%{DATA:node}\] (\[%{NOTSPACE:Index}\]\[%{NUMBER:shards}\])?%{GREEDYDATA}"
+      ]
+   }
+참고) https://logz.io/blog/logstash-grok/
+```
+
