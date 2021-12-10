@@ -1,7 +1,7 @@
 ## Elastic Stack 과 Kafka 를 사용해서 로그 데이터 파이프라인을 만들자
 ### 서론
-저번에 Elasticsearch 노드 systemd 파일에 자동 restart 설정을 걸어둔 후로, outofmemory 로 죽었을 때에도 설정한 3분 이내에 재시작이 되어 편해지긴 했지만  
-어떤 노드가 무슨 이유로 죽었는지 정확한 로그를 분석하는 게 번거로워진 이유로, 해당 Elasticsearch 노드마다의 로그 중 이슈 관련 로그만 teams 로 받아보기로 결정했다.
+저번에 Elasticsearch 노드 systemd 파일에 자동 restart 설정을 걸어둔 후로 정확한 원인 분석하는 게 번거로워진 이유로,  
+해당 Elasticsearch 노드마다의 로그 중 이슈 관련 로그만 teams 로 받아보기로 했다.
 
 ### 구성
 TIL 문서이므로, 대략적인 데이터 흐름을 적어본다.  
