@@ -47,7 +47,7 @@ output.kafka:
   fields_under_root: true
   fields:
     log_topic: elasticlog
-  #include_lines: [ '*[WARN ]*', '*[ERROR]*' ]
+  include_lines: [ '\[WARN', '\[ERROR' ]
   multiline.type: pattern
   multiline.pattern: '^\[[0-9]{4}-[0-9]{2}-[0-9]{2}'
   multiline.negate: true
