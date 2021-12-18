@@ -19,5 +19,5 @@
 - Infra, Elatic Stack, Kafka, Redis, Python, Node.js 등 예정
 
 포스트는 다음의 양식으로 작성한다.
-- 제목 : YYYY.MM.DD <주제>  
+- 제목 : YYYYMMDD_<주제>  
 - 내용 : 자유롭게 작성하되, 업무 개인 컨플에 작성하듯 편하게 써내려간다.
