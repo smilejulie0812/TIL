@@ -22,4 +22,9 @@ rm -rf /var/lib/elasticsearch
 rm -rf /var/lib/kibana
 ```
 
+마무리로 autoremove 처리로 오래된 패키지 파일을 지워서 디스크 여유 사이즈를 확보한다.
+```bash
+sudo apt-get autoremove
+```
+
 [https://blog.naver.com/PostView.nhn?blogId=indy9052&logNo=221387817807&categoryNo=66&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView&userTopListOpen=true&userTopListCount=5&userTopListManageOpen=false&userTopListCurrentPage=1](https://blog.naver.com/PostView.nhn?blogId=indy9052&logNo=221387817807&categoryNo=66&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView&userTopListOpen=true&userTopListCount=5&userTopListManageOpen=false&userTopListCurrentPage=1)
