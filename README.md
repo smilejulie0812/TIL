@@ -16,7 +16,7 @@
 - 기타 경험(웨비나 등의 이벤트, 검색이나 생각의 확장을 통해 알게 된 것들)에 의한 지식 등
 
 포스트 관리는 주제별 디렉토리를 생성하여 관리한다.  
-- Infra, Elatic Stack, Kafka, Redis, Python, Node.js 등 예정
+- Infra, Elatic Stack, Kafka, Redis, RDBMS, Python, Node.js 등 예정
 
 포스트는 다음의 양식으로 작성한다.
 - 제목 : YYYYMMDD_<주제>  
