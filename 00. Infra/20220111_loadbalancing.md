@@ -32,3 +32,14 @@
 ### 막간 도메인 상식
 
 당연하긴 한데, 도메인 신청할 땐 IP 주소 - 도메인 짝으로 신청하는 거지 IP 주소 - 도메인:포트 신청은 불가능하다(~~네트워크 지식 어떻게 된겨~~)
+
+### 과제
+
+Load Balancing 은 OSI Layer L4, L7 에서 움직인다는(정확히 말하면 L4 스위치랑 L7 스위치가 해주는 거) 점은 알고 있는데, 각각의 Load Balacing 동작이 어떻게 달라지는지까지는 정확히 파악 못하고 있지 않나. 이 부분 추가 공부가 필요한 듯(NLB, ALB 의 차이점).
+
+그리고 로드밸런싱의 동작 방식을 좀 더 깊이 알아두면 추후 도움이 많이 될 것 같기도 하다.
+
+로드밸런서를 HA 구성으로 하여 장애에 대비하는 구성도 알아두면 좋을 듯.
+
+[https://dev.classmethod.jp/articles/load-balancing-types-and-algorithm/](https://dev.classmethod.jp/articles/load-balancing-types-and-algorithm/) 랑  
+[https://prohannah.tistory.com/62](https://prohannah.tistory.com/62) 여기 참고!
