@@ -39,11 +39,11 @@ POST _flush/synced
 ### -> 재시작 노드 순서는 Coordinate -> Master -> Data 순서대로 한다
 
 ### 클러스터 모니터링용 API
-// 클러스터 전체 헬스체크. v 옵션은 위의 머릿글을 함께 표시 
+##### 클러스터 전체 헬스체크. v 옵션은 위의 머릿글을 함께 표시 
 GET _cat/health?v
-// 클러스터 노드 체크
+##### 클러스터 노드 체크
 GET _cat/nodes?v
-// 대기 중인 태스크의 리스트를 출력
+##### 대기 중인 태스크의 리스트를 출력
 GET _cat/pending_tasks
 
 ### Shard Rebalancing 활성화 : all 으로 조정
