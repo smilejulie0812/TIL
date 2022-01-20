@@ -13,7 +13,7 @@ PUT _cluster/settings
     "cluster.routing.allocation.node_concurrent_outgoing_recoveries": 32,
     "cluster.routing.allocation.node_initial_primaries_recoveries": 32,
     "cluster.routing.allocation.cluster_concurrent_rebalance": 32
-    ""
+  }
 }
 
 ### 2. 클러스터 인바운드/아웃바운드 트래픽 제한 수치 높여주기
@@ -21,6 +21,7 @@ PUT _cluster/settings
 {
   "transient": {
     "indices.recovery.max_bytes_per_sec": "512mb"
+  }
 }
 
 ### 3. Shard Rebalancing 비활성화 : none 으로 조정
