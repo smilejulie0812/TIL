@@ -27,7 +27,8 @@ PUT _cluster/settings
 PUT _cluster/settings
 {
   "persistent": {
-    "cluster.routing.rebalance.enable": "none"
+    "cluster.routing.rebalance.enable": "none",
+    "cluster.routing.allocation.enable": "none"
   }
 }
 
@@ -50,7 +51,8 @@ GET _cat/pending_tasks
 PUT _cluster/settings
 {
   "persistent": {
-    "cluster.routing.rebalance.enable": "none"
+    "cluster.routing.rebalance.enable": "all",
+    "cluster.routing.allocation.enable": "all"
   }
 }
 ```
