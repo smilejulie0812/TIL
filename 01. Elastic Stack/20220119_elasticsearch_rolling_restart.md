@@ -56,7 +56,28 @@ PUT _cluster/settings
     "cluster.routing.allocation.enable": "all"
   }
 }
+
+### 클러스터 인바운드/아웃바운드 트래픽 제한 수치 기본값으로 반환
+PUT _cluster/settings
+{
+  "transient": {
+    "indices.recovery.max_bytes_per_sec": null
+  }
+}
+
+### 클러스터 레벨에서 Shard Allocation 하는 수 기존값으로 재설정
+PUT _cluster/settings
+{
+  "persistent": {
+    "cluster.routing.allocation.node_concurrent_incoming_recoveries": 16,
+    "cluster.routing.allocation.node_concurrent_outgoing_recoveries": 16,
+    "cluster.routing.allocation.node_initial_primaries_recoveries": 16,
+    "cluster.routing.allocation.cluster_concurrent_rebalance": 16
+  }
+}
+
 ```
+
 ## 참고
 * https://www.elastic.co/guide/en/elasticsearch/reference/current/restart-cluster.html#restart-cluster-rolling
 * https://www.popit.kr/%EC%97%98%EB%9D%BC%EC%8A%A4%ED%8B%B1%EC%84%9C%EC%B9%98es-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0-%EC%9E%AC%EC%8B%9C%EC%9E%91-%ED%98%B9%EC%9D%80-%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C-tip/
