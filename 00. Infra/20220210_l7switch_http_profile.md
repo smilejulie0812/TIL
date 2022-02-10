@@ -27,3 +27,4 @@ Switch 에서 Profile 이란 Virtual Server( VIP:Port ) 의 설정파일이라 �
 ### 참고
 
 - [https://aws-hyoh.tistory.com/entry/L4L7-로드밸런싱-쉽게-이해하기](https://aws-hyoh.tistory.com/entry/L4L7-%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%8B%B1-%EC%89%BD%EA%B2%8C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0)
+- [https://www.nowwatersblog.com/backend/serverLoad/L4L7](https://www.nowwatersblog.com/backend/serverLoad/L4L7)
