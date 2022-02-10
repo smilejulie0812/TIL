@@ -1,3 +1,5 @@
+# L7 Switch HTTP Profile
+
 원래 1대의 Kafka Broker 로만 운영하던 것을 3대로 scale-out 하고 Kafka Cluster 로 묶는 작업을 했다.
 
 여기서 한 가지 문제가 되었던 것이 도메인 주소이다. 원래 Broker 가 1대뿐이었어서 그 서버의 IP 에 도메인을 붙였었는데, 3대로 확장하고 나니 이 도메인 주소를 어떻게 붙여야 하는지 설정 변경이 필요했던 것이다.
